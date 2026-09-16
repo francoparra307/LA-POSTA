@@ -1,0 +1,200 @@
+/* ========================================
+   LA POSTA
+   Diseño inicial
+   ======================================== */
+
+/* ---------- CONFIGURACIÓN GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111315;
+    color: #e8e8e8;
+    min-height: 100vh;
+}
+
+
+/* ---------- ENCABEZADO ---------- */
+
+header {
+    width: 100%;
+    background: #181b1f;
+    border-bottom: 1px solid #2b2f34;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #9da3aa;
+}
+
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+
+main {
+    width: 100%;
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+main > p {
+    color: #9da3aa;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* ---------- TARJETAS ---------- */
+
+.card {
+    background: #181b1f;
+    border: 1px solid #2b2f34;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #c4c8cc;
+    line-height: 1.6;
+}
+
+
+/* ---------- BOTONES ---------- */
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: #e8e8e8;
+    color: #111315;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+/* ---------- ENLACES ---------- */
+
+a {
+    color: #e8e8e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- BARRA DE PUBLICACIÓN ---------- */
+
+.post-box {
+    background: #181b1f;
+    border: 1px solid #2b2f34;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.post-box textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    background: #111315;
+    border: 1px solid #2b2f34;
+    border-radius: 8px;
+    padding: 14px;
+    color: #e8e8e8;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.post-box textarea:focus {
+    border-color: #666d75;
+}
+
+.post-box .post-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* ---------- PIE DE PÁGINA ---------- */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #777d84;
+    font-size: 13px;
+}
+
+
+/* ---------- CELULARES ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .card,
+    .post-box {
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
